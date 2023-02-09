@@ -4,6 +4,13 @@
   display: flex;
   justify-content: space-between;
 
+  @include respond(tab-port) {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 }
 
 

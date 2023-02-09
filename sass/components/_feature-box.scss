@@ -1,16 +1,18 @@
 .feature-box{
 background-color: rgb($color-white,.8);
+padding: 1rem;
 display: flex;
 flex-flow: column nowrap;
 align-items: center;
+justify-content: space-evenly;
+ max-width: 25rem;
+ height: auto;
 
-max-width: 22rem;
-height: 30rem;
-padding-left: 1rem;
 
 &:hover{
   animation-name: moveInHover;
-  animation-duration: 1s;
+  animation-duration: .5s;
+  
 }
 
 
@@ -29,6 +31,22 @@ padding-left: 1rem;
   }
   &__text{
  font-size: $default-font-size;
+ margin-left: 2rem;
+ 
   }
+  @include respond(tab-port) {
+    max-width: 40rem;
+    height: auto;
+    margin-bottom: 5rem;
+
+}
+
+@include respond(tab-land) {
+  max-width: 40rem;
+  height: auto;
+  margin-bottom: 5rem;
+
+}
+
 
 }
