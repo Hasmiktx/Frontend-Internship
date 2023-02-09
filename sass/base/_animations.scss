@@ -6,6 +6,7 @@
 
   80% {
     transform: translateX(1rem);
+    background-color: rgb(243, 249, 141);
   }
 
   100% {
@@ -39,5 +40,14 @@
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes moveInHover{
+  from{
+    transform: translateY(0rem);
+  }
+  to{
+    transform: translateY(-3rem);
   }
 }
