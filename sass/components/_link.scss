@@ -1,0 +1,14 @@
+.btn-text {
+    color:$color-primary;
+    font-size: $default-font-size;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary-dark;
+    
+    
+     &:hover{
+        color:$color-white;
+        background-color: $color-primary;
+    }
+   
+}

@@ -34,17 +34,23 @@ justify-content: space-evenly;
  margin-left: 2rem;
  
   }
-  @include respond(tab-port) {
-    max-width: 40rem;
+  @include respond(phone) {
+    min-width: 80vw;
     height: auto;
     margin-bottom: 5rem;
 
 }
+  @include respond(tab-port) {
+    width: 25%;
+    height: auto;
+    // margin-bottom: 5rem;
+
+}
 
 @include respond(tab-land) {
-  max-width: 40rem;
+  max-width: 25rem;
   height: auto;
-  margin-bottom: 5rem;
+  margin-right: 10rem;
 
 }
 
