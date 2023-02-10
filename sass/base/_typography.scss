@@ -52,14 +52,16 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s;
-  margin-left: 5rem;
+  margin-left: 20rem;
 
   @include respond(tab-port) {
       font-size: 3rem;
+      margin-left: 5rem;
   }
 
   @include respond(phone) {
       font-size: 2.5rem;
+      
   }
 
   &:hover {

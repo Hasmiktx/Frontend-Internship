@@ -204,11 +204,12 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
-  margin-left: 5rem;
+  margin-left: 20rem;
 }
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
     font-size: 3rem;
+    margin-left: 5rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -412,6 +413,13 @@ body {
 .row-2 {
   display: flex;
   margin-top: 8rem;
+  margin-left: 20rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .row-2 {
+    flex-flow: column nowrap;
+    margin-bottom: 20rem;
+  }
 }
 
 .col-1 {
@@ -447,11 +455,29 @@ body {
   margin-top: 3rem;
   margin-left: 25rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .section-about_img-2 {
+    margin-top: 0;
+    margin-left: 25rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-about_img-2 {
+    margin-top: 0;
+    margin-left: 20rem;
+  }
+}
 .section-about_img-3 {
   position: absolute;
   margin-top: 10rem;
   margin-left: 10rem;
   margin-right: 10rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-about_img-3 {
+    margin-top: -2rem;
+    margin-left: 10rem;
+  }
 }
 .section-about_img {
   outline-offset: 2rem;
