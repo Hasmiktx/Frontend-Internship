@@ -21,7 +21,6 @@ $breakpoint arguement choices:
   }
   80% {
     transform: translateX(1rem);
-    background-color: rgb(243, 249, 141);
   }
   100% {
     opacity: 1;
@@ -35,7 +34,6 @@ $breakpoint arguement choices:
   }
   80% {
     transform: translateX(1rem);
-    background-color: rgb(243, 249, 141);
   }
   100% {
     opacity: 1;
@@ -206,6 +204,7 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+  margin-left: 5rem;
 }
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
@@ -299,10 +298,8 @@ body {
   height: auto;
 }
 .feature-box:hover {
-  -webkit-animation-name: moveInHover;
-          animation-name: moveInHover;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  transform: translateY(-5rem);
+  transition: 0.2s ease-in;
 }
 .feature-box__icon {
   font-size: 6rem;
@@ -321,24 +318,22 @@ body {
   font-size: 1.6rem;
   margin-left: 2rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 75em) {
   .feature-box {
-    min-width: 80vw;
-    height: auto;
-    margin-bottom: 5rem;
+    min-width: 20rem;
+    margin-right: 5rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .feature-box {
-    width: 25%;
-    height: auto;
+    min-width: 50rem;
+    margin-bottom: 5rem;
   }
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 37.5em) {
   .feature-box {
-    max-width: 25rem;
-    height: auto;
-    margin-right: 10rem;
+    min-width: 60vw;
+    margin-bottom: 3rem;
   }
 }
 
@@ -416,10 +411,13 @@ body {
 
 .row-2 {
   display: flex;
+  margin-top: 8rem;
 }
 
 .col-1 {
   max-width: 60vw;
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
 .section-about {
@@ -427,7 +425,7 @@ body {
   flex-flow: column nowrap;
   align-items: baseline;
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 20rem 0;
   margin-top: -20vh;
 }
 @media only screen and (max-width: 56.25em) {
@@ -435,32 +433,19 @@ body {
     padding: 20rem 0;
   }
 }
-.section-about_img-div {
+.section-about_composition {
   position: relative;
-}
-.section-about_img:hover {
-  background-color: #eee;
-  padding: 1rem;
-  border: 1rem solid rgba(85, 197, 122, 0.8);
-  border-radius: 2rem;
-  transform: scale(1.1);
-  transition: 0.1s;
+  margin-right: 60rem;
 }
 .section-about_img-1 {
   position: absolute;
   margin-top: 0;
   margin-left: 0;
 }
-.section-about_img-1:hover {
-  z-index: 5;
-}
 .section-about_img-2 {
   position: absolute;
   margin-top: 3rem;
   margin-left: 25rem;
-}
-.section-about_img-2:hover {
-  z-index: 5;
 }
 .section-about_img-3 {
   position: absolute;
@@ -468,10 +453,15 @@ body {
   margin-left: 10rem;
   margin-right: 10rem;
 }
-.section-about_img-div {
-  border-radius: 2px;
-  transition: all 0.2s;
+.section-about_img {
   outline-offset: 2rem;
+  border-radius: 2rem;
+}
+.section-about_img:hover {
+  outline: 1.5rem solid #55c57a;
+  z-index: 10;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .section-features {
