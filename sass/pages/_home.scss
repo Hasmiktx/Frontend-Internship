@@ -87,7 +87,7 @@
 
 
 .section-features {
-    // height: 90vh;
+    
     padding: 20rem 0;
      background-image:linear-gradient(
         to right bottom,
@@ -106,6 +106,7 @@
    
     @include respond(tab-port) {
         padding: 10rem 0;
+        
     }
 
 }
